@@ -5,14 +5,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>OOP</title>
 </head>
 
 <body>
+    <h1>Object Oriented Programming</h1>
+    <ul>
+        <li>Basics</li>
+        <li>Creator function</li>
+        <li>Constructor function</li>
+        <li>Apply - Call</li>
+        <li>Dynamic Object</li>
+        <li>Constructor property</li>
+        <li>Enumerations</li>
+        <li>Primitives vs Refrences</li>
+        <li>Cloning an object</li>
+    </ul>
+    <code>
+        new String() // A new String object <br>
+        new Number() // A new Number object <br>
+        new Boolean() // A new Boolean object <br>
+        new Object() // A new Object object <br>
+        new Array() // A new Array object <br>
+        new RegExp() // A new RegExp object <br>
+        new Function() // A new Function object <br>
+        new Date() // A new Date object <br>
+    </code>
+
+    <p> As you can see above, JavaScript has object versions of the primitive data types String, Number, and Boolean.
+        But
+        there is no reason to create complex objects. Primitive values are much faster:</p>
+    <code>
+        Use string literals "" instead of new String(). <br>
+        Use number literals 50 instead of new Number(). <br>
+        Use boolean literals true / false instead of new Boolean(). <br>
+        Use object literals {} instead of new Object(). <br>
+        Use array literals [] instead of new Array(). <br>
+        Use pattern literals /()/ instead of new RegExp(). <br>
+        Use function expressions () {} instead of new Function(). <br>
+    </code>
 
 
 
-    <script src="13_Dates.js"></script>
+
+    <script src="01_Object_Basic.js"></script>
+    <script src="02_factory_function.js"></script>
+    <script src="03_Constructor_Function.js"></script>
+    <script src="04_apply_call.js"></script>
+    <script src="05_dynamic_objects.js"></script>
+    <script src="06_constructor_property.js"></script>
+    <script src="07_enumeration.js"></script>
+    <script src="08_premitive_reference.js"></script>
+    <script src="09_cloning_object.js"></script>
 </body>
 
 </html>
