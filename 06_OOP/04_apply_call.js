@@ -22,3 +22,6 @@ console.log(circle2);
 const obj2 = { name: "Hesam" };
 const circle3 = Circle.apply(obj2, [7]);
 console.log(circle3);
+
+// TODO : explain more
+// TODO : Bind
