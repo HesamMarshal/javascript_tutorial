@@ -1,9 +1,9 @@
-// 
+// Concat vs push
 
 const first = [1, 2, 3];
 const second = [4, 5, 6];
 
-// Concat vs push
+
 
 // add
 const add = first + second;
@@ -16,6 +16,8 @@ console.log(typeof add);
 // console.log(len);
 // console.log(first);
 
+
+// Concat
 const concat1 = first.concat(second);
 console.log(concat1);
 
