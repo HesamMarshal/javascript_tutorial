@@ -16,3 +16,6 @@ console.log(circle1)
 //      1. new empty object   {}
 //      2. this points to empty object
 //      3. return this object
+
+
+// Todo: change the name to lowercase
