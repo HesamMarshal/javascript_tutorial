@@ -12,11 +12,14 @@ const circle = {
 };
 
 console.log(circle);
-// Property
+// Property : no parantheses
 console.log(circle.location);
-// method
+
+
+// method : has parantheses
 circle.move();
 
-// factory function
-// constructor function
+// Todo: change the name to lowercase
+
+
 
