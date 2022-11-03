@@ -1,20 +1,26 @@
-
-
+import Dashboard from "../pages/Dashboard.js";
+import Products from "../pages/Products.js";
+import Posts from "../pages/Posts.js";
 // Functions
 function router(params) {
     // What view show to user based on route
     // routes: dashboard, products, posts
     const routes = [
-        { path: '/SPA/', view: () => console.log('dashboard page') },
-        { path: '/SPA/posts', view: () => console.log('posts page') },
-        { path: '/SPA/products', view: () => console.log('products page') },
+        { path: '/SPA/', view: Dashboard },
+        { path: '/SPA/products', view: Products },
+        { path: '/SPA/posts', view: Posts },
     ];
+
+    // const routes = [
+    //     { path: '/SPA/', view: () => console.log("Dash") },
+    //     { path: '/SPA/products', view: () => console.log("Dash") },
+    //     { path: '/SPA/posts', view: () => console.log("Dash") },
+    // ];
 
     const potentialRoutes = routes.map(item => {
         return {
             route: item,
             isMatch: location.pathname === item.path,
-
         };
     });
 
@@ -28,7 +34,8 @@ function router(params) {
     }
 
     // console.log(match);
-    match.route.view();
+    document.querySelector('#app').innerHTML = match.route.view();
+    // match.route.view();
 
 }
 function navigateTo(url) {
