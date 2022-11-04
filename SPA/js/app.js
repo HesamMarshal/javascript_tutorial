@@ -1,14 +1,15 @@
 import Dashboard from "../pages/Dashboard.js";
 import Products from "../pages/Products.js";
 import Posts from "../pages/Posts.js";
+import NotFound from "../pages/NotFound.js";
 // Functions
 function router(params) {
     // What view show to user based on route
     // routes: dashboard, products, posts
     const routes = [
-        { path: '/SPA/', view: Dashboard },
-        { path: '/SPA/products', view: Products },
-        { path: '/SPA/posts', view: Posts },
+        { path: '/', view: Dashboard },
+        { path: '/products', view: Products },
+        { path: '/posts', view: Posts },
     ];
 
     // const routes = [
@@ -25,10 +26,10 @@ function router(params) {
     });
 
     let match = potentialRoutes.find(route => route.isMatch);
-
+    // console.log(potentialRoutes);
     if (!match) {
         match = {
-            route: { path: '/404', view: () => console.log('404 page') },
+            route: { path: 'NotFound', view: NotFound },
             isMatch: true,
         }
     }
@@ -51,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // if (e.target.hasAttribute('data-link')) {
         if (e.target.matches("[data-link]")) {
             e.preventDefault();
-            // console.log(e.target.href)
+
             navigateTo(e.target.href);
         };
     })
