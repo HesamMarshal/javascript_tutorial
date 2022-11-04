@@ -1,0 +1,23 @@
+{
+  "name": "javascript_tutorial",
+  "version": "1.0.0",
+  "description": "<a href=\"https://chaptera.ir\"><img src=\"https://chaptera.ir/wp-content/uploads/2022/03/Chaptera_colored_logo_199_32.png\" width=\"199\" height=\"32\" align=\"right\" /></a><br>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HesamMarshal/javascript_tutorial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HesamMarshal/javascript_tutorial/issues"
+  },
+  "homepage": "https://github.com/HesamMarshal/javascript_tutorial#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
