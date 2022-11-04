@@ -29,6 +29,18 @@
 
 
 ## 📖 مستندات 
+### فعال سازی نود
+
+```bash
+npm init --y
+
+```
+### نصب و راه اندازی Express
+```bash
+npm i express
+
+node server.js
+```
 
 ### 📦دانلود و نصب گیت
 * Go to the: https://www.git-scm.com/
