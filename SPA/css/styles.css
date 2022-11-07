@@ -48,12 +48,13 @@ body {
     background: linear-gradient(180deg, #324467, #283142);
     display: flex;
     flex-direction: column;
+    transition: var(--mainTransition);
 }
 
 .nav__logo {
     text-decoration: uppercase;
     letter-spacing: 0.2rem;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 800;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     color: var(--mainWhite);
@@ -90,7 +91,8 @@ body {
 }
 
 .icon-container {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
 .nav__item-label {
@@ -100,15 +102,19 @@ body {
     text-overflow: hidden;
 }
 
-
 .app-version {
     color: var(--mainWhite);
     padding: 10px 0px;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+
+/* Mini Side Bar */
 .mini-sidebar.nav {
-    width: 70px;
+    /* width: 70px; */
     overflow-x: hidden;
 }
 
@@ -117,12 +123,27 @@ body {
     background-color: transparent;
 }
 
+.nav.mini-sidebar .nav__logo {
+    font-size: 1.5rem;
+}
+
+.nav.mini-sidebar .app-version__label {
+    display: none;
+
+}
+
+.sidebar-toggler {
+    transition: var(--mainTransition);
+}
+
+.nav.mini-sidebar .sidebar-toggler {
+    transform: rotate(180deg);
+    margin-left: 10px;
+}
+
+
 #app {
     height: 200vh;
     padding: 3rem 2rem 0 0;
     flex-grow: 1;
-}
-
-.nav.mini-sidebar .nav__logo {
-    font-size: 1.5rem;
 }

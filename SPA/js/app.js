@@ -58,3 +58,19 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     router();
 });
+
+const sidebarToggler = document.querySelector(".sidebar-toggler");
+const sidebar = document.querySelector(".nav");
+const root = document.documentElement;
+
+
+
+sidebarToggler.addEventListener("click", () => {
+    sidebar.classList.toggle("mini-sidebar");
+    if (sidebar.classList.contains("mini-sidebar"))
+        root.style.setProperty('--nav-width', "70px");
+    else
+        root.style.setProperty('--nav-width', "250px");
+
+
+});
