@@ -16,12 +16,27 @@
 <body>
     <h1>SPA: Single Page Application</h1>
     <div class="main-layout">
-        <nav class="nav">
-            <ul>
-                <li><a href="/" class="nav__link" data-link="">Dashboard</a></li>
-                <li><a href="products" class="nav__link" data-link="">Products</a></li>
-                <li><a href="posts" class="nav__link" data-link="">Blog</a></li>
-            </ul>
+        <nav class="nav mini-sidebar">
+            <div class="nav__logo">SPA</div>
+            <div class="nav__item">
+                <ul class="nav__items">
+                    <li class="nav__item">
+                        <a href="/" class="nav__link" data-link>
+                            <span class="icon-container"><i class="far fa-user"></i></span>
+                            <span class="nav__item-label">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav__item"><a href="products" class="nav__link" data-link="">
+                            <span class="icon-container"><i class="fab fa-product-hunt"></i></span>
+                            <span class="nav__item-label">Products</span>
+                        </a></li>
+                    <li class="nav__item"><a href="posts" class="nav__link" data-link="">
+                            <span class="icon-container"><i class="fab fa-blogger-b"></i></span>
+                            <span class="nav__item-label">Blogs</span>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="app-version">SPA v.1</div>
         </nav>
         <main id="app"></main>
     </div>

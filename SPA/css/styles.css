@@ -44,14 +44,39 @@ body {
     position: sticky;
     top: 0;
     left: 0;
+    border-radius: 0 100px 0 0;
+    background: linear-gradient(180deg, #324467, #283142);
+    display: flex;
+    flex-direction: column;
 }
 
-.nav li {
+.nav__logo {
+    text-decoration: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 3rem;
+    font-weight: 800;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--mainWhite);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.nav__items {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.nav__items::-webkit-scrollbar {
+    display: none;
+}
+
+.nav__item {
     margin: 5px 0;
 }
 
+
 .nav__link {
-    color: var(--mainGrey);
+    color: var(--mainWhite);
     text-decoration: none;
     display: block;
     padding: 12px 8px;
@@ -64,7 +89,40 @@ body {
     border-radius: 1.5rem;
 }
 
+.icon-container {
+    font-size: 1.2rem;
+}
+
+.nav__item-label {
+    margin: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: hidden;
+}
+
+
+.app-version {
+    color: var(--mainWhite);
+    padding: 10px 0px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.mini-sidebar.nav {
+    width: 70px;
+    overflow-x: hidden;
+}
+
+.mini-sidebar.nav .nav__link:hover {
+    color: gold;
+    background-color: transparent;
+}
+
 #app {
     height: 200vh;
-    padding: 1rem;
+    padding: 3rem 2rem 0 0;
+    flex-grow: 1;
+}
+
+.nav.mini-sidebar .nav__logo {
+    font-size: 1.5rem;
 }
